@@ -6,8 +6,8 @@ sudo apt install openjdk-11-jdk
 java -version
 # Install Jenkins
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
-    https://pkg.jenkins.io/redhat-stable/jenkins.repo
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    https://pkg.jenkins.io/ubuntu-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/ubuntu-stable/jenkins.io.key
 sudo dnf upgrade
 # Add required dependencies for the jenkins package
 sudo dnf install chkconfig java-devel
